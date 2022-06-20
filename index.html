@@ -1,43 +1,151 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Suite landing page</title>
-</head>
-<body>
+      <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png" />
+      <!-- google font -->
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;700&display=swap" rel="stylesheet" />
+      <!-- Main css -->
+      <link rel="stylesheet" href="public/main.css" />
 
-  Request Beta Access
+      <title>Suite</title>
+   </head>
+   <body class="bg-white">
+      <!-- container -->
+      <div class="container mx-auto mb-[237px]">
+         <!-- header -->
+         <header class="content-container">
+            <!-- nav -->
+            <nav class="flex flex-row justify-between items-center pt-6 pb-14">
+               <img class="w-20" src="./assets/logo.svg" alt="suite" />
+               <button class="btn btn-action">Request Beta Access</button>
+            </nav>
+            <!-- nav end -->
+            <!-- main -->
+            <main class="md:grid md:grid-cols-[1fr,140.5px,140.5px] lg:grid-cols-[1fr,430px,190px] items-end md:items-center relative">
+               <!-- title  -->
+               <div class="mb-14 pt-8 z-10 col-start-1 col-span-2 row-start-1">
+                  <!-- curve -->
+                  <figure>
+                     <div class="absolute w-40 top-2 right-7 md:w-[231px] md:top-9 md:right-[230px] lg:right-[510px] lg:w-[300px]">
+                        <img src="./assets/pattern-curved-line-1.svg" alt="curved line" />
+                     </div>
+                  </figure>
+                  <!-- curve end -->
+                  <div>
+                     <h1 class="text-[38px] md:text-[56px] lg:text-7xl lg:mb-5">A <b>super solution</b></h1>
+                     <h1 class="text-[38px] md:text-[56px] lg:text-7xl -mt-3 mb-8 md:mb-10">for your <b>business.</b></h1>
+                     <p class="leading-7 tracking-[.09px] lg:tracking-[.01px] lg:text-lg lg:leading-8 pb-8 md:w-[350px]">
+                        Our marketing and sales automations help you scale your outreach to get more leads for your company.
+                     </p>
+                     <button class="btn btn-primary btn-gradient md:m-0">Request Beta Access</button>
+                  </div>
+               </div>
+               <!-- title end -->
+               <!-- images  -->
+               <picture class="inline-block mb-14 col-start-2 col-end-4 row-start-1">
+                  <source
+                     media="(min-width: 768px)"
+                     srcset="./assets/image-hero-portrait.webp, ./assets/image-hero-portrait@2x.webp 2x"
+                     type="image/webp"
+                  />
 
-  A super solution for your business.
+                  <source
+                     media="(min-width: 768px)"
+                     srcset="./assets/image-hero-portrait.png, ./assets/image-hero-portrait@2x.png 2x"
+                     type="image/png"
+                  />
+                  <source srcset="./assets/image-hero-landscape.webp, ./assets/image-hero-landscape@2x.webp 2x" type="image/webp" />
+                  <source srcset="./assets/image-hero-landscape.png, ./assets/image-hero-landscape@2x.png 2x" type="image/png" />
 
-  Our marketing and sales automations help you scale your outreach to 
-  get more leads for your company. 
+                  <img src="./assets/image-hero-landscape.png" alt=" cell phone" />
+               </picture>
+               <!-- images end  -->
 
-  Request Beta Access
+               <!-- aside -->
+               <aside
+                  class="text-center space-y-8 md:space-y-0 md:grid md:grid-cols-3 lg:grid-cols-1 md:col-start-1 lg:col-start-3 md:col-end-4 md:items-center lg:row-start-1 lg:content-evenly lg:min-h-[600px]"
+               >
+                  <div>
+                     <b class="text-5xl leading-[56px] text-darkBlue">2K+</b>
+                     <p class="leading-6 uppercase tracking-[2.5px] text-gray">Companies</p>
+                  </div>
+                  <div>
+                     <b class="text-5xl leading-[56px] text-darkBlue">8</b>
+                     <p class="leading-6 uppercase tracking-[2.5px] text-gray">Languages</p>
+                  </div>
+                  <div>
+                     <b class="text-5xl leading-[56px] text-darkBlue">1.2M</b>
+                     <p class="leading-6 uppercase tracking-[2.5px] text-gray">Leads</p>
+                  </div>
+               </aside>
+               <!-- aside end -->
+            </main>
+            <!-- main end -->
+         </header>
+         <!-- header end -->
+      </div>
+      <!-- container end -->
 
-  2K+
-  Companies
+      <!-- testimonial -->
 
-  8
-  Languages
+      <article
+         class="rounded-lg bg-darkBlue grid relative min-h-[748px] md:blur-img-md lg:blur-img-lg md:min-h-[684px] content-container min-w-full md:min-w-0 md:-mb-[460px] lg:-mb-[260px] lg:grid-cols-2 lg:items-center lg:min-h-[538px]"
+      >
+         <!-- images  -->
+         <picture class="absolute lg:relative justify-self-center -mt-44 lg:-mt-[54px]">
+            <source media="(min-width: 1068px)" srcset="assets/image-jeremy-large.webp, assets/image-jeremy-large@2x.webp 2x" type="image/webp" />
+            <source media="(min-width: 1068px)" srcset="assets/image-jeremy-large.png, assets/image-jeremy-large@2x.png 2x" type="image/png" />
+            <source srcset="assets/image-jeremy-small.webp, assets/image-jeremy-small@2x.webp 2x" type="image/webp" />
+            <source srcset="assets/image-jeremy-small.png, assets/image-jeremy-small@2x.png 2x" type="image/png" />
+            <img src="./assets/image-jeremy-small.png" alt="man with red shirt using stylus on phone" />
+         </picture>
+         <!-- images end -->
+         <div class="self-end lg:self-auto text-center lg:text-left px-4 md:px-[58px]">
+            <!-- curve -->
+            <img
+               src="./assets/pattern-curved-line-2.svg"
+               class="inline-block w-12 mb-9 lg:absolute lg:left-[500px] lg:top-40 lg:w-16"
+               alt="right upward curve"
+            />
+            <!-- curve end  -->
+            <h3 class="text-[40px] leading-[48px] tracking-[-.42px] text-white mb-10">It just <b>works.</b></h3>
+            <p class="text-lg leading-8 tracking-[.09px] md:tracking-[.09px] text-offWhite mb-10">
+               “I really like how it is an all-in-one solution that handle many of the tasks that you would normally need separate tools to do the
+               same job. This thing is a miracle worker.”
+            </p>
+            <b class="text-lg uppercase tracking-[-.18px] text-white">Jeremy Robinson</b>
+            <p class="leading-6 uppercase tracking-[2.5px] text-offWhite mb-16">CMO, Fylo</p>
+         </div>
+      </article>
 
-  1.2M
-  Leads
+      <!-- testimonial end -->
 
-  It just works.
-
-  “I really like how it is an all-in-one solution that handle many of 
-  the tasks that you would normally need separate tools to do the same 
-  job. This thing is a miracle worker.”
-
-  Jeremy Robinson
-  CMO, Fylo
-
-  Copyright - Suite
-
-</body>
+      <!-- footer -->
+      <footer class="bg-offWhite pt-14 pb-20 md:min-h-[640px] lg:min-h-[464px] flex flex-col">
+         <!-- container -->
+         <div class="container mx-auto mt-auto">
+            <div class="content-container">
+               <div class="text-center space-y-8 md:flex md:justify-between md:items-center">
+                  <img src="./assets/logo.svg" class="inline" alt="suite" />
+                  <p>Copyright - Suite</p>
+                  <!-- social icon images here -->
+                  <div class="flex justify-center space-x-10">
+                     <a class="hover:footer-links" aria-label="Facebook" href=""><img src="./assets/icon-facebook.svg" alt="facebook" /></a>
+                     <a class="hover:footer-links" aria-label="Twitter" href=""><img src="./assets/icon-twitter.svg" alt="twitter" /></a>
+                     <a class="hover:footer-links" aria-label="Instagram" href=""><img src="./assets/icon-instagram.svg" alt="instagram" /></a>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- container end -->
+      </footer>
+      <!-- footer end -->
+   </body>
 </html>
+
+<!-- Todo: add blur behind image.  place testimonial curve at lg in right position hover affects on footer icons -->

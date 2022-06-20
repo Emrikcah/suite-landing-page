@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+   body {
+      font-family: "Epilogue", sans-serif;
+   }
+}
+
+@layer components{
+   .btn{
+      @apply px-4 py-3 text-sm leading-6 tracking-[-.14px] rounded-md text-darkBlue font-bold border border-darkBlue
+   }
+
+   .btn-action{
+      @apply hover:bg-darkBlue hover:text-white
+   }
+
+   .btn-primary{
+      @apply text-white text-lg leading-8 tracking-[-.18px] px-8 bg-darkBlue 
+   }
+
+   .btn-gradient{
+      @apply border-none hover:bg-gradient-to-br from-purple to-pink to-orange 
+   }
+
+   .content-container{
+      @apply w-full mx-auto max-w-[344px] md:max-w-[689px] lg:max-w-[1110px]
+   }
+
+   .blur-img-md::before{
+      content: '';
+      position: absolute;
+      background-image: url(../assets/pattern-blur.svg);
+      background-repeat: no-repeat;
+     transform: scale(.75);
+      inset: -15rem 4.5rem;
+    
+   }
+
+   .blur-img-lg::before{
+      transform: none;
+      inset: 3rem 1rem;
+   }
+
+   .footer-links{
+      @apply opacity-50 duration-75 ease-in-out;
+   }
+}
